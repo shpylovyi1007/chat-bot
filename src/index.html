@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <script type="module" src="./main.js"></script>
-  </body>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Чат Бот</title>
+</head>
+
+<body>
+  <div class="chat-container">
+    <header class="header">T-Space</header>
+    <div class="messages" id="messages"></div>
+
+    <form id="contactForm" class="hidden">
+      <input type="text" id="firstName" placeholder="Ім'я" required>
+      <input type="text" id="lastName" placeholder="Прізвище" required>
+      <input type="email" id="email" placeholder="Пошта" required>
+      <input type="tel" id="phone" placeholder="Телефон" required>
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
